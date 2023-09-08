@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function hoistingTest() {
+            // Try printing a variable here
+            
+            console.log(x)
+            // Declare the variable after the console.log
+            // x = 42;
+            //js will only hoist variables from the global scope 
+            //but does not work the same within the local scope. 
+            //defining the variable here does not produce a hoisted variable.
+        }
+        x = 42;
+        hoistingTest()
+
+    </script>
+</body>
+</html>

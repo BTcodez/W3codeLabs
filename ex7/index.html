@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function setupCounter() {
+            // Define a count variable here
+            let count = 0;
+
+            return function increment() { 
+            // Increment and print the count}
+                count++
+                console.log(count)
+            }
+            
+        }
+        // Create a counter instance and invoke it to test
+    
+        let myCount = setupCounter()
+
+        myCount()
+        myCount()
+        myCount()
+        myCount()
+        myCount()
+
+    </script>
+</body>
+</html>
